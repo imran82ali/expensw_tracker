@@ -4,8 +4,8 @@ import {GlobalContext} from '../context/GlobalState'
 
 export const AddTransaction = () => {
     const {addTransaction } = useContext(GlobalContext);
-    const [description,setDescription] = useState();
-    const [transactionamount,setTransactionAmount] = useState();
+    const [description,setDescription] = useState('');
+    const [transactionamount,setTransactionAmount] = useState('');
     
     const onSubmit = (e) => {
         e.preventDefault();
